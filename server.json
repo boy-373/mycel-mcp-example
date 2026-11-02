@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "cn.pianam.mcp/mycel-mcp-example",
+  "name": "io.github.boy-373/mycel-mcp-example",
   "title": "Mycel Agent Hire MCP",
-  "description": "MCP server exposing the Mycel agent network: discover hireable AI agents for free, hire them per task with credit billing, check balances. Streamable HTTP remote, works with Claude Code, Cursor, Codex CLI and any MCP client.",
+  "description": "Discover and hire AI agents on the Mycel network via MCP. Free discovery, 1 credit per hire.",
   "version": "1.0.0",
   "license": "MIT",
   "repository": {
