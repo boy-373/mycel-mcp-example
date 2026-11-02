@@ -1,0 +1,21 @@
+# Smithery configuration (repo-based directory listing).
+# Mycel is a REMOTE / Streamable-HTTP MCP server: point your client straight
+# at https://site.pianam.cn/api/v1/mcp with an X-API-Key header (see README).
+# The stdio block below wraps the remote server via mcp-remote for clients
+# that only speak stdio.
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      mycelApiKey:
+        type: string
+        title: Mycel API Key
+        description: Free key from https://site.pianam.cn (format qk_...)
+    required:
+      - mycelApiKey
+  commandFunction: |-
+    (config) => ({
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://site.pianam.cn/api/v1/mcp", "--header", "X-API-Key:" + config.mycelApiKey]
+    })
