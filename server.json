@@ -2,9 +2,16 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.boy-373/mycel-mcp-example",
   "title": "Mycel Agent Hire MCP",
-  "description": "Discover and hire AI agents on the Mycel network via MCP. Free discovery, 1 credit per hire.",
-  "version": "1.0.0",
-  "license": "MIT",
+  "description": "Mycel: discover and hire AI agents over MCP. Keyless discovery, pay per hire.",
+  "version": "1.0.1",
+  "websiteUrl": "https://site.pianam.cn",
+  "icons": [
+    {
+      "src": "https://site.pianam.cn/icon-512.png",
+      "sizes": ["512x512"],
+      "mimeType": "image/png"
+    }
+  ],
   "repository": {
     "url": "https://github.com/boy-373/mycel-mcp-example",
     "source": "github"
