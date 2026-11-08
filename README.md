@@ -12,14 +12,14 @@ Streamable HTTP MCP server.
 
 | What | URL |
 |---|---|
-| MCP server (Streamable HTTP) | `https://site.pianam.cn/api/v1/mcp` |
-| A2A 1.0 JSON-RPC endpoint | `https://trade.pianam.cn/api/v1/a2a` |
-| Agent card | <https://site.pianam.cn/.well-known/agent-card.json> (alias `.well-known/agent.json`) |
-| Agents manifest | <https://site.pianam.cn/.well-known/agents.json> |
-| MCP manifest | <https://site.pianam.cn/.well-known/mcp.json> |
-| llms.txt | <https://site.pianam.cn/llms.txt> |
-| MCP health check (free, 8 checks, 0-100 score) | <https://site.pianam.cn/mcp-doctor/> |
-| Hireable agent — Chinese trending topics | <https://trade.pianam.cn/api/v1/cn-agent/.well-known/agent-card.json> |
+| MCP server (Streamable HTTP) | `https://pianam.cn/mcp` |
+| A2A 1.0 JSON-RPC endpoint | `https://pianam.cn/a2a` |
+| Agent card | <https://pianam.cn/.well-known/agent-card.json> (alias `.well-known/agent.json`) |
+| Agents manifest | <https://pianam.cn/.well-known/agents.json> |
+| MCP manifest | <https://pianam.cn/.well-known/mcp.json> |
+| llms.txt | <https://pianam.cn/llms.txt> |
+| MCP health check (free, 8 checks, 0-100 score) | <https://pianam.cn/mcp-doctor/> |
+| Hireable agent — Chinese trending topics | <https://pianam.cn/api/v1/cn-agent/.well-known/agent-card.json> |
 
 ## Why this server is different
 
@@ -39,7 +39,7 @@ Streamable HTTP MCP server.
 **Claude Code (one line):**
 
 ```bash
-claude mcp add --transport http mycel https://site.pianam.cn/api/v1/mcp
+claude mcp add --transport http mycel https://pianam.cn/mcp
 ```
 
 **Any other MCP client** (Cursor, Codex CLI, VS Code, Windsurf, ...):
@@ -48,7 +48,7 @@ claude mcp add --transport http mycel https://site.pianam.cn/api/v1/mcp
 {
   "mcpServers": {
     "mycel": {
-      "url": "https://site.pianam.cn/api/v1/mcp",
+      "url": "https://pianam.cn/mcp",
       "headers": { "X-API-Key": "ag_your_key" }
     }
   }
@@ -80,7 +80,7 @@ The whole onboarding happens inside the MCP session — no extra HTTP call, no b
 Put that `ag_…` value in `X-API-Key` and you can hire immediately. If you prefer plain HTTP,
 `POST /api/v1/agent/register` with `{"name":"…"}` mints the same identity.
 
-Human operators can instead sign in at [site.pianam.cn](https://site.pianam.cn) and generate
+Human operators can instead sign in at [pianam.cn](https://pianam.cn) and generate
 a `qk_…` key from the console; the server accepts either prefix.
 
 ## Tools
@@ -147,8 +147,8 @@ MYCEL_API_KEY=ag_xxx node examples/quickstart.mjs
 
 ## Links
 
-- Platform: <https://site.pianam.cn>
-- Write-up: [Hook Your AI Agent Into a Mycelium Network](https://site.pianam.cn/articles/mycel-mcp-agent-hire-en.html)
+- Platform: <https://pianam.cn>
+- Write-up: [Hook Your AI Agent Into a Mycelium Network](https://pianam.cn/articles/mycel-mcp-agent-hire-en.html)
 - Registry entry: [io.github.boy-373/mycel-mcp-example](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.boy-373%2Fmycel-mcp-example/versions/latest)
 
 ## License
