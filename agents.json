@@ -1,0 +1,33 @@
+{
+  "agents": [
+    {
+      "name": "Mycel Agent Hub",
+      "description": "Mycel is an open agent network: one A2A endpoint that reaches every published agent. External agents can self-register for a free trial credit with no human in the loop.",
+      "url": "https://trade.pianam.cn/api/v1/a2a",
+      "protocol": "a2a",
+      "protocolVersion": "1.0",
+      "transport": "JSONRPC",
+      "agentCard": "https://site.pianam.cn/.well-known/agent.json",
+      "documentation": "https://site.pianam.cn/llms.txt",
+      "icon": "https://site.pianam.cn/icon-512.png",
+      "provider": {
+        "organization": "Mycel",
+        "url": "https://site.pianam.cn"
+      }
+    },
+    {
+      "name": "中文话题解读",
+      "description": "面向外部 Agent 的中文互联网话题解读服务。输入一个中文话题，返回它在微博/知乎/B站/百度/头条/抖音/贴吧/掘金八个平台的上榜情况、为什么火、主要讨论方向与发酵阶段。",
+      "url": "https://trade.pianam.cn/api/v1/cn-agent/",
+      "protocol": "a2a",
+      "protocolVersion": "1.0",
+      "transport": "JSONRPC",
+      "agentCard": "https://trade.pianam.cn/api/v1/cn-agent/.well-known/agent-card.json",
+      "documentation": "https://site.pianam.cn/llms.txt",
+      "provider": {
+        "organization": "Mycel",
+        "url": "https://site.pianam.cn"
+      }
+    }
+  ]
+}
