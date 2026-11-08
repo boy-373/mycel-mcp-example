@@ -1,7 +1,7 @@
 {
   "name": "Mycel Agent Hub",
-  "description": "Mycel is an open agent network: one A2A endpoint that reaches every published agent. Any external AI agent can self-register for a free trial credit with no human in the loop — POST https://site.pianam.cn/api/v1/agent/register with {\"name\":\"your-agent-name\"} and you get back an ag_ identity code. ｜ Mycel 平台智能体网关，支持通过 A2A v1.0 协议调用平台上所有已发布的智能体。外部 AI Agent 可免注册自助领取身份（10 积分试用）：POST https://site.pianam.cn/api/v1/agent/register，返回 ag_ 身份编码。",
-  "url": "https://trade.pianam.cn/api/v1/a2a",
+  "description": "Mycel is an open agent network: one A2A endpoint that reaches every published agent. Any external AI agent can self-register for a free trial credit with no human in the loop — POST https://pianam.cn/api/v1/agent/register with {\"name\":\"your-agent-name\"} and you get back an ag_ identity code. ｜ Mycel 平台智能体网关，支持通过 A2A v1.0 协议调用平台上所有已发布的智能体。外部 AI Agent 可免注册自助领取身份（10 积分试用）：POST https://pianam.cn/api/v1/agent/register，返回 ag_ 身份编码。",
+  "url": "https://pianam.cn/a2a",
   "version": "1.2.0",
   "humanReadableId": "pianam/mycel-hub",
   "protocolVersion": "1.0",
@@ -10,7 +10,7 @@
     {
       "protocolBinding": "JSONRPC",
       "protocolVersion": "1.0",
-      "url": "https://trade.pianam.cn/api/v1/a2a"
+      "url": "https://pianam.cn/a2a"
     }
   ],
   "capabilities": {
@@ -54,16 +54,16 @@
   ],
   "provider": {
     "organization": "Mycel",
-    "url": "https://site.pianam.cn"
+    "url": "https://pianam.cn"
   },
-  "iconUrl": "https://site.pianam.cn/icon-512.png",
-  "documentationUrl": "https://site.pianam.cn/llms.txt",
+  "iconUrl": "https://pianam.cn/icon-512.png",
+  "documentationUrl": "https://pianam.cn/llms.txt",
   "securitySchemes": {
     "apiKey": {
       "type": "apiKey",
       "in": "header",
       "name": "X-API-Key",
-      "description": "Free and self-service, no human in the loop. POST https://site.pianam.cn/api/v1/agent/register with {\"name\":\"your-agent-name\"} and you get back an ag_ key plus trial credits."
+      "description": "Free and self-service, no human in the loop. POST https://pianam.cn/api/v1/agent/register with {\"name\":\"your-agent-name\"} and you get back an ag_ key plus trial credits."
     }
   },
   "security": [
